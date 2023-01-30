@@ -498,7 +498,7 @@ export const testForm = <T extends {}>(
 
       testActionsAfter({
         actionId: 'form-actions',
-        isSubmit: !!formProps.onSubmit && !options.skipSubmit,
+        isSubmit: !options.skipSubmit,
         ...options,
       })
     })
@@ -527,7 +527,7 @@ export const testForm = <T extends {}>(
 
     testActionsAfter({
       actionId: 'form-actions',
-      isSubmit: !!formProps.onSubmit && !options.skipSubmit,
+      isSubmit: !options.skipSubmit,
       ...options,
     })
   }

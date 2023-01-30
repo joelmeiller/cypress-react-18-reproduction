@@ -1,21 +1,7 @@
 import { ButtonType } from 'frr-web/lib/components/Button'
 import { Form, FormProps } from 'frr-web/lib/form/components/Form'
-import { FormField, FormFieldType } from 'frr-web/lib/form/components/types'
-import { makeFormLens } from 'frr-web/lib/form/util'
 import { Person } from '../../types/Person'
 import { usePersonContext } from '../providers/PersonProvider'
-import {
-  loadCitySuggestions,
-  loadZipSuggestions,
-} from '../utils/loadZipCitySuggestions'
-import {
-  validateCity,
-  validateEmail,
-  validateMobilePhoneNr,
-  validateName,
-  validateStreetNumber,
-  validateZip,
-} from '../utils/validate'
 import { personFormFields } from './Person.formFields'
 
 export const personFormProps: Pick<
@@ -35,7 +21,7 @@ export const personFormProps: Pick<
   ],
 }
 
-export const PersonModule = (props: {}) => {
+export const PersonModule = (props: { onSubmit: () => void }) => {
   const { value, setValue } = usePersonContext()
 
   return (
@@ -44,7 +30,9 @@ export const PersonModule = (props: {}) => {
       data={value}
       onChange={setValue}
       onSubmit={({ formState }) => {
+        console.log('SUBMIT', formState)
         setValue(formState)
+        props.onSubmit()
       }}
     />
   )

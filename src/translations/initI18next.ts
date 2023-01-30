@@ -1,9 +1,9 @@
 import i18next from 'i18next'
 import { initReactI18next } from 'react-i18next'
-import de from './locales/de/translation'
-import en from './locales/en/translation'
+import de from './locales/de/translation.json'
+import en from './locales/en/translation.json'
 
-const DEBUG = true
+const DEBUG = false
 
 i18next
   // pass the i18n instance to react-i18next.

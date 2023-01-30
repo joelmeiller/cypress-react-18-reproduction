@@ -15,10 +15,6 @@ export type TestModuleActions = {
     disabledBefore?: boolean
     click?: boolean
   }>
-  fallbackButtonId?: string
-  link?: {
-    dataTestId: string
-  }
 }
 
 export type TestOptions = {

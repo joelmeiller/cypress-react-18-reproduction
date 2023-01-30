@@ -1042,4 +1042,5 @@ export const ZipCityList = [
   { id: 4997, city: 'Suscévaz', zip: '1437', searchstring: '1437 Suscévaz' },
   { id: 4998, city: 'Mathod', zip: '1438', searchstring: '1438 Mathod' },
   { id: 4999, city: 'Rances', zip: '1439', searchstring: '1439 Rances' },
+  { id: 8004, city: 'Zürich', zip: '8004', searchstring: '8004 Zürich' },
 ]

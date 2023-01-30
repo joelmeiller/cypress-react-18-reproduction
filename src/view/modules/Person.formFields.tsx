@@ -137,10 +137,10 @@ export const personFormFields: FormProps<Person>['formFields'] = [
       ],
       {
         type: FormFieldType.TextInput,
-        label: { label: 'formFields.phone.label' },
+        label: { label: 'formFields.phoneNumber.label' },
         name: 'phone',
         prefix: '+41',
-        placeholder: 'formFields.phone.placeholder',
+        placeholder: 'formFields.phoneNumber.placeholder',
         lens: mkPersonLens(['baseInfo', 'phone']),
         validate: validateMobilePhoneNr,
       },
