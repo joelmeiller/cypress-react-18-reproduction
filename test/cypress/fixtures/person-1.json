@@ -1,0 +1,21 @@
+{
+  "baseInfo": {
+    "name": "Max",
+    "surname": "Mustermann",
+    "email": "max.mustermann@cypress.test",
+    "countryCode": "+41",
+    "phone": "798881111",
+    "language": "de"
+  },
+  "address": {
+    "street": "Fischerweg",
+    "houseNr": "11",
+    "city": "4056",
+    "zip": "Basel",
+    "country": null
+  },
+  "optIns": {
+    "hasNewsletter": true,
+    "hasPrivacyPolicyAccepted": true
+  }
+}
